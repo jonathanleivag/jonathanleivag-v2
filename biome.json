@@ -20,12 +20,31 @@
 		"lineEnding": "lf"
 	},
 	"organizeImports": {
-		"enabled": true
+		"enabled": true,
+		"include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+		"ignore": ["node_modules"]
 	},
 	"linter": {
 		"enabled": true,
+		"include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+		"ignore": ["node_modules", "*.astro", "*.svelte", "*.vue"],
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"style": {
+				"useConst": "error"
+			},
+			"correctness": {
+				"noUnusedVariables": "error",
+				"noConstAssign": "error",
+				"noUnusedImports": "error",
+				"useImportExtensions": "warn"
+			},
+			"suspicious": {
+				"noConsole": {
+					"level": "warn",
+					"options": { "allow": ["error", "info", "table"] }
+				}
+			}
 		}
 	},
 	"json": {

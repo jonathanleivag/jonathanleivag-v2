@@ -10,9 +10,9 @@ import {
 	NavbarMenuToggle,
 	Switch,
 } from "@nextui-org/react";
-import { type ChangeEvent, type FC, useEffect, useState } from "react";
+import { type FC, useEffect, useState } from "react";
 import { themeStore } from "../../store/theme.store";
-import ImageCloudinaryUi from "../ui/imageCloudinary";
+import ImageCloudinaryUi from "../ui/imageCloudinary.ts";
 
 const menuItems = ["Inicio", "Proyectos", "Sobre Mí", "Contáctame"];
 
@@ -61,7 +61,6 @@ const NavbarShared: FC = () => {
 		if (window.localStorage.getItem("theme")) {
 			themeStore.set(window.localStorage.getItem("theme") as "dark" | "light");
 		}
-		return () => {};
 	}, []);
 
 	const handleThemeChange = () => {
