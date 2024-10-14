@@ -6,5 +6,13 @@
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit"
 	},
-	"cSpell.language": "en,es"
+	"cSpell.language": "en,es",
+	"cSpell.words": [
+		"cloudinary",
+		"Cloudinary",
+		"Contáctame",
+		"nanostores",
+		"nextui",
+		"tailwindcss"
+	]
 }
