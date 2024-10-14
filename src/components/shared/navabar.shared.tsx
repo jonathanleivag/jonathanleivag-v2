@@ -12,7 +12,7 @@ import {
 } from "@nextui-org/react";
 import { type ChangeEvent, type FC, useEffect, useState } from "react";
 import { themeStore } from "../../store/theme.store";
-import ImageCloudinaryUi from "../ui/imagecCoudinary.ui";
+import ImageCloudinaryUi from "../ui/imageCloudinary";
 
 const menuItems = ["Inicio", "Proyectos", "Sobre Mí", "Contáctame"];
 
